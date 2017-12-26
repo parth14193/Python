@@ -13,11 +13,11 @@ from boto.exception import S3ResponseError
 
 LOCAL_PATH = '/Securonix/elbaccess/'
 
-AWS_KEY = 'AKIAIJXH4AML6UZ3Z23Q'
-AWS_SECRET = '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'
+AWS_KEY = ''
+AWS_SECRET = ''
 aws_connection = S3Connection(AWS_KEY, AWS_SECRET)
 
-bucket = aws_connection.get_bucket('elbacesslog' , validate=False)
+bucket = aws_connection.get_bucket('' , validate=False)
 
 for key in bucket.list():
     keyString = str(key.key)

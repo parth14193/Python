@@ -11,7 +11,7 @@ import tarfile
 from boto.exception import S3ResponseError
 from datetime import datetime, timedelta
 
-LOCAL_PATH = '/Securonix/elbaccess/'
+LOCAL_PATH = 'Local OS path'
 
 ####### Code for last N days ###########
 
@@ -23,8 +23,8 @@ datetime=str(datetime[0])
 
 #######################################
 
-AWS_KEY = 'AKIAIJXH4AML6UZ3Z23Q'
-AWS_SECRET = '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'
+AWS_KEY = ''
+AWS_SECRET = ''
 aws_connection = S3Connection(AWS_KEY, AWS_SECRET)
 
 bucket = aws_connection.get_bucket('elbacesslog' , validate=False)

@@ -11,7 +11,7 @@ from boto.s3.connection import S3Connection
 import tarfile
 from boto.exception import S3ResponseError
 
-LOCAL_PATH = '/Securonix/elbaccess/'
+LOCAL_PATH = '/abc/elbaccess/'
 
 AWS_KEY = ''
 AWS_SECRET = ''
